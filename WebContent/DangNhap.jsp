@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/CSS.css">
-<title>TrangChu</title>
+<title>DangNhap</title>
 </head>
 <body>
 	<div class="container">
@@ -159,12 +159,12 @@
 						<h4>Tên đăng nhập*</h4>
 						<div class="input-group">
 							  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-							  <input id="email" type="text" class="form-control" name="TenDN" placeholder="Tên đăng nhập" required>
+							  <input id="TenDN" type="text" class="form-control" name="TenDN" placeholder="Tên đăng nhập" required>
 						</div>
 						<h4>Mật khẩu*</h4>
 						<div class="input-group">
 							  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							  <input id="password" type="password" class="form-control" name="MatKhau" placeholder="Mật khẩu" required>
+							  <input id="MatKhau" type="password" class="form-control" name="MatKhau" placeholder="Mật khẩu" required>
 						</div>
 						<div class="DangNhap">
 							<br>
