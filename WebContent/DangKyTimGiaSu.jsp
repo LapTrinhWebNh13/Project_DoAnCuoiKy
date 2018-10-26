@@ -241,7 +241,7 @@
 						 	</div>
 						 	<div class="row">
 						 		<label for="matkhau">Mật khẩu (<span class="red">*</span>)</label>
-						 		<input type="text" name="matkhau" id="matkhau" required>
+						 		<input type="password" name="matkhau" id="matkhau" required>
 						 	</div>
 						 	<div class="submit">
 						 		<input type="submit" value="Đăng ký">

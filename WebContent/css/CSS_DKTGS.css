@@ -143,13 +143,13 @@ p.text
 	background-image: url(../image/Ca.png);
 	background-size: 700px 40px;
 }
-input[type=text], textarea {
+input[type=text], [type=password], textarea {
     width: 60%;
     padding: 4px;
     border: 1px solid #ccc;
     resize: vertical;
 }
-input[type=text], select, textarea{
+input[type=text], [type=password], select, textarea{
 	border-radius: 4px;
 }
 select{
