@@ -14,8 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="css/CSS_DKLGS.css">
 </head>
 <body>
-	
-<body>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-1">
