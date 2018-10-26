@@ -1,18 +1,19 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta charset="utf-8">
+<title>DangKyTimGiaSu</title>
+
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/CSS.css">
-<title>DangNhap</title>
+  <link rel="stylesheet" type="text/css" href="css/CSS_DKTGS.css">
+
 </head>
 <body>
 	<div class="container">
@@ -133,48 +134,140 @@
 				</div>
 			</div>
 	  	</div>
-	  	<div class="col-lg-7" style="">
+	  	<div class="col-lg-7">
 	  		<div class="panel panel-default">
 				<div class="panel-heading">
-					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">ĐĂNG NHẬP</p>
+					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">ĐĂNG KÝ TÌM GIA SƯ</p>
 				</div>
 				<div class="panel-body">
-					<form>
-						<p style="float: left;">ĐĂNG NHẬP VỚI QUYỀN: </p>
-						<label class="radio-inline">
-						  <input type="radio" name="user" checked>PHỤ HUYNH
-						</label>
-						<label class="radio-inline">
-						  <input type="radio" name="user">GIA SƯ
-						</label>
-						<label class="radio-inline">
-						  <input type="radio" name="user">ADMIN
-						</label>
-					  </form>
-					  <hr>
-					<form>
-						
-						<p>Nếu bạn đã có tài khoản trên website của chúng tôi, vui lòng đăng nhập!</p>
-						
-						<h4>Tên đăng nhập*</h4>
-						<div class="input-group">
-							  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-							  <input id="TenDN" type="text" class="form-control" name="TenDN" placeholder="Tên đăng nhập" required>
+						 <form action="#" name="DKTGS" id="FormDKTGS" method="post">
+						 	<div class="row" >
+						 		<label for="hoten">Họ tên (<span class="red">*</span>)</label>
+						 		<input type="text" name="name" id="name" placeholder="Nguyễn Văn A" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="diachi">Địa chỉ (<span class="red">*</span>)</label>
+						 		<input type="text" name="diachi" id="diachi" placeholder="Phường 13, Q.Tân Bình, TP.HCM" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="dienthoai">Điện thoại (<span class="red">*</span>)</label>
+						 		<input type="text" name="dienthoai" id="dienthoai" placeholder="0923456723" required>
+						 	</div> 
+						 	<div class="row">
+						 		<label for="email">Email (<span class="red">*</span>)</label>
+						 		<input type="text" name="email" id="email" placeholder="abc@gmail.com" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="lop">Lớp (<span class="red">*</span>)</label>
+						 		<select name="classes">
+						 			<option value="lop1">Lớp 1</option>
+						 			<option value="lop2">Lớp 2</option>
+						 			<option value="lop3">Lớp 3</option>
+						 			<option value="lop4">Lớp 4</option>
+						 			<option value="lop5">Lớp 5</option>
+						 			<option value="lop6">Lớp 6</option>
+						 			<option value="lop7">Lớp 7</option>
+						 			<option value="lop8">Lớp 8</option>
+						 			<option value="lop9">Lớp 9</option>
+						 			<option value="lop10">Lớp 10</option>
+						 			<option value="lop11">Lớp 11</option>
+						 			<option value="lop12">Lớp 12</option>
+						 			<option value="lopngoaingu">Lớp ngoại ngữ</option>
+						 			<option value="ondaihoc">Ôn đại học</option>
+						 			<option value="lopnangkhieu">Lớp năng khiếu</option>
+						 		</select>
+						 	</div>
+						 	<div class="row">
+						 		<label for="monhoc">Môn học (<span class="red">*</span>)</label>
+						 		<input type="text" name="monhoc" id="monhoc" placeholder="Ví dụ: toán, lý, hóa..." required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="soluonghs">Số lượng học sinh (<span class="red">*</span>)</label>
+						 		<input type="text" name="soluonghs" id="soluonghs" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="hocluchientai">Học lực hiện tại (<span class="red">*</span>)</label>
+						 		<input type="text" name="hocluchientai" id="hocluchientai" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="sobuoi">Số buổi (<span class="red">*</span>)</label>
+						 		<select name="sobuoi" required>
+						 			<option value="1">1</option>
+						 			<option value="2">2</option>
+						 			<option value="3">3</option>
+						 			<option value="4">4</option>
+						 			<option value="5">5</option>
+						 			<option value="6">6</option>
+						 			<option value="7">7</option>
+						 		</select>
+						 		<label for="tuan" class="tuan">buổi/tuần</label>
+						 	</div>
+						 	<div class="row">
+						 		<label for="thoigianhoc">Thời gian học (<span class="red">*</span>)</label>
+						 		<input type="text" name="thoigianhoc" id="thoigianhoc" placeholder="Ví dụ: T2-T4-T6; 17h-19h" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="yeucau">Yêu cầu (<span class="red">*</span>)</label>
+						 		<select class="yeucau"  required>
+						 			<option value="svnam">Sinh viên nam</option>
+						 			<option value="svnu">Sinh viên nữ</option>
+						 			<option value="gvnam">Giáo viên nam</option>
+						 			<option value="gvnu">Giáo viên nữ</option>
+						 			<option value="cunhannu">Cử nhân nữ</option>
+						 			<option value="cunhannam">Cử nhân nam</option>
+						 			<option value="thsinam">Thạc sĩ nam</option>
+						 			<option value="thsinu">Thạc sĩ nữ</option>
+						 			<option value="tsinam">Tiến sĩ nam</option>
+						 			<option value="tsinu">Tiến sĩ nữ</option>
+						 		</select>
+						 	</div>
+						 	<div class="row">
+						 		<label for="luong">Lương(<span class="red">*</span>)</label>
+						 		<input type="text" name="luong" id="luong" required>
+						 	</div>
+						 	<div class="row">
+						 		<label for="masogiasudachon">Mã số gia sư đã chọn (<span class="red">*</span>)</label>
+						 		<input type="text" name="masogiasudachon" id="masogiasudachon" placeholder="Ví dụ: Mã số 112, 113" required><br/>
+						 		<a href="#" class="linkgiasu">Chọn gia sư tại đây</a>
+						 	</div>
+						 	<div class="row">
+						 		<label for="yeucaukhac">Yêu cầu khác</label>
+						 		<textarea name="yeucaukhac" id="yeucaukhac" rows="5" >
+						 		</textarea>
+						 	</div>
+						 	<div class="row">
+						 		<label for="tendangnhap">Tên đăng nhập (<span class="red">*</span>)</label>
+						 		<input type="text" name="tendangnhap" id="tendangnhap" required><br/>
+						 	</div>
+						 	<div class="row">
+						 		<label for="matkhau">Mật khẩu (<span class="red">*</span>)</label>
+						 		<input type="password" name="matkhau" id="matkhau" required>
+						 	</div>
+						 	<div class="submit">
+						 		<input type="submit" value="Đăng ký">
+						 	</div>
+						 </form>
+						 
+					
+					</div>
+					<div class="banggia"><p style="font-size: 15px; color: blue; padding-left: 20px; font-weight: bold; padding-top: 10px;">BẢNG GIÁ HỌC PHÍ THUÊ GIA SƯ DẠY KÈM TRUNG BÌNH TẠI CÁC TỈNH/THÀNH</p>
+					</div>
+					<div class="panel-body">
+						<img src="image/bangGia.PNG">
+					</div>
+					<div class="panel-body">
+						<div class="luuy">
+							<p style="color: blue; font-weight: bold; font-size: 15px; margin-top:-10px;"><u>Lưu ý:</u></p>
+							<p>Thời gian dạy của sinh viên một buổi là 120 phút, thời gian dạy của giáo viên một buổi là 90 phút. Học phí trên áp dụng cho 1 tháng từ thời điểm gia sư bắt đầu dạy học viên</p>
+							<p>Học phí sẽ tăng tùy theo số môn học(trừ trường hợp báo bài), số người học, địa điểm học và yêu cầu thêm (thêm 1 môn học là +100.000đ, thêm 1 người học là +200.000đ) </p>
+							<p>Học phí trên áp dụng cho sinh viên và giáo viên có bằng cử nhân của các trường đại học khác hoặc giáo viên có bằng đại học sư phạm</p>
+							<span>Đối với thạc sỹ, giáo viên thâm niên, giáo viên dạy tại trường có kinh nghiệm dạy kèm mức học phí được tính theo tiết (1 tiết = 45 phút) :<br/>
+								 + Cấp 1:  70.000 đ -  90.000 đ / 1 tiết (45 phút) = 140.000 đ - 180.000 đ / 1 buổi <br/>
+								+ Cấp 2:  80.000 đ -  100.000 đ/ 1 tiết (45 phút) = 160.000 đ - 200.000 đ / 1 buổi <br/>
+								+ Cấp 3: 100.000 đ- 120.000 đ / 1 tiết (45 phút) = 200.000 đ - 240.000 đ / 1 buổi
+							</span>
 						</div>
-						<h4>Mật khẩu*</h4>
-						<div class="input-group">
-							  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							  <input id="MatKhau" type="password" class="form-control" name="MatKhau" placeholder="Mật khẩu" required>
-						</div>
-						<div class="DangNhap">
-							<br>
-							<a href="#" style="margin-left: 20px;margin-top: -5px;">Quên mật khẩu!! </a>
-							<input type="submit" value="ĐĂNG NHẬP" style="background-color: #F43538; color: white;width: 120px;height: 35px;border-radius: 5px;border: none;margin-top: -5px;">
-						</div>
-						<br>
-						<p>Nếu bạn chưa có tài khoản trên website của chúng tôi, vui lòng đăng ký <a href="#">Tại đây</a>!</p>
-				</form>
-	  			</div>
+					</div>
 	 		</div>
 		  </div>
 	  	<div class="col-lg-2" style="width: 240px;">
@@ -238,9 +331,12 @@
 					</a>
 
 					<br>
+					
+					
 					 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGia-S%25C6%25B0-Tr%25C3%25AD-Vi%25E1%25BB%2587t-613051568814323%2F&tabs=timeline&width=240&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="240" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 					
 				</div>
+				
 			</div>
 
 	  	</div>
@@ -299,9 +395,9 @@
 	</div>
 </body>
 <script>
-      
+      //khai báo biến slideIndex đại diện cho slide hiện tại
       var slideIndex;
-      
+      // KHai bào hàm hiển thị slide
       function showSlides() {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -315,16 +411,16 @@
 
           slides[slideIndex].style.display = "block";  
           dots[slideIndex].className += " active";
-          
+          //chuyển đến slide tiếp theo
           slideIndex++;
-          
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
           if (slideIndex > slides.length - 1) {
             slideIndex = 0
           }    
-          
+          //tự động chuyển đổi slide sau 8s
           setTimeout(showSlides, 8000);
       }
-      
+      //mặc định hiển thị slide đầu tiên 
       showSlides(slideIndex = 0);
 
 
@@ -332,4 +428,5 @@
         showSlides(slideIndex = n);
       }
     </script>
+
 </html>
