@@ -192,15 +192,15 @@
 						 	<div class="row">
 						 		<label for="sobuoi">Số buổi (<span class="red">*</span>)</label>
 						 		<select name="sobuoi" required>
-						 			<option value="1buoi">1 buổi</option>
-						 			<option value="2buoi">2 buổi</option>
-						 			<option value="3buoi">3 buổi</option>
-						 			<option value="4buoi">4 buổi</option>
-						 			<option value="5buoi">5 buổi</option>
-						 			<option value="6buoi">6 buổi</option>
-						 			<option value="1buoi">7 buổi</option>
+						 			<option value="1">1</option>
+						 			<option value="2">2</option>
+						 			<option value="3">3</option>
+						 			<option value="4">4</option>
+						 			<option value="5">5</option>
+						 			<option value="6">6</option>
+						 			<option value="1buoi">7</option>
 						 		</select>
-						 		<label for="tuan" class="tuan">/tuần</label>
+						 		<label for="tuan" class="tuan">buổi/tuần</label>
 						 	</div>
 						 	<div class="row">
 						 		<label for="thoigianhoc">Thời gian học (<span class="red">*</span>)</label>
