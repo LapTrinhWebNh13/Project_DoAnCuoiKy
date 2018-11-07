@@ -141,8 +141,63 @@ p.text
 {
 	height: 40px;
 	background-image: url(../image/Ca.png);
-	background-size: 700px 40px;
+	background-size:900px 40px;
 }
+input[type=text] {
+    width: 70%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+
+input[type=text]{
+	border-radius: 4px;
+}
+
+
+
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    width: 100px;
+	height: 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.luuy{
+	font-weight: bold;
+}
+.danhsach table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.danhsach td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.danhsach th
+{
+    background-color: #4CAF50;
+  border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;   
+}
+.danhsach tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+.danhsach tr:hover
+{
+    background-color: #ddd;
+}
+
 #footer
 {
 	height: auto;
@@ -164,3 +219,8 @@ background-image: url(../image/quan.jpg);
 	 color: darkred;
 	 font-weight: bold;
 }
+.table,.table th,.table td{
+    border: 1px solid #DDDD;
+}
+
+
