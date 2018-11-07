@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-  <title>DANGNHAP</title>
-  <meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/CSS.css">
-
+<title>DangNhap</title>
 </head>
 <body>
 	<div class="container">
@@ -44,13 +45,13 @@
 	  		<nav class="nav">
 			  <div id="menu">
 				<ul class="nav navbar-nav" style="background-color:#F7CD20;">
-				  <li class="hover"><a href="#">TRANG CHỦ</a></li>
-				  <li><a href="#">LỚP MỚI</a></li>
-				  <li><a href="#" >PHỤ HUYNH</a></li>
-				  <li><a href="#" >GIA SƯ</a></li>
-				  <li><a href="#" >TUYỂN DỤNG</a></li>
-				  <li><a href="#" >LIÊN HỆ</a></li>
-				  <li><a href="#" >ĐĂNG NHẬP</a></li>
+				  <li><a href="TrangChu.jsp">TRANG CHỦ</a></li>
+				  <li><a href="LopMoiChuaGiao.jsp">LỚP MỚI</a></li>
+				  <li><a href="DangKyTimGiaSu.jsp" >PHỤ HUYNH</a></li>
+				  <li><a href="DangKyLamGiaSu.jsp" >GIA SƯ</a></li>
+				  <li><a href="TuyenDung.jsp" >TUYỂN DỤNG</a></li>
+				  <li><a href="LienHe.jsp" >LIÊN HỆ</a></li>
+				  <li class="hover"><a href="DangNhap.jsp" >ĐĂNG NHẬP</a></li>
 				</ul>
 			  </div>
 			</nav>
@@ -91,12 +92,12 @@
 	  		<div id="left">
 				<div class="list-group">
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">PHỤ HUYNH</a>
-					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí tìm gia sư</a>
+					<a href="DangKyTimGiaSu.jsp" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí tìm gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Phụ huynh cần biết</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Học phí gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Dịch vụ gia sư</a>
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">GIA SƯ</a>
-					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí làm gia sư</a>
+					<a href="DangKyLamGiaSu.jsp" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí làm gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Quy trình nhận lớp</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Gia sư cần biết</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Mức phí gia sư</a>
@@ -104,7 +105,7 @@
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">GIA SƯ TIÊU BIỂU</a>
   				</div>
   				<div id="anhgstieubieu">
-						<a href="#"><img src="image/gs1.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: -10px"></a>
+						<a href="GiaSuTieuBieu.jsp"><img src="image/gs1.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: -10px"></a>
 						<a href="#"><img src="image/gs2.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5x;margin-top: -10px"></a>
 						<a href="#"><img src="image/gs3.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: 5px"></a>
 						<a href="#"><img src="image/gs4.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: 5px"></a>
@@ -131,7 +132,8 @@
 				</div>
 			</div>
 	  	</div>
-	  	<div class="col-lg-7" style="">
+	  	<div class="col-lg-7" >
+	  		<br>
 	  		<div class="panel panel-default">
 				<div class="panel-heading">
 					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">ĐĂNG NHẬP</p>
@@ -157,12 +159,12 @@
 						<h4>Tên đăng nhập*</h4>
 						<div class="input-group">
 							  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-							  <input id="email" type="text" class="form-control" name="TenDN" placeholder="Tên đăng nhập" required>
+							  <input id="TenDN" type="text" class="form-control" name="TenDN" placeholder="Tên đăng nhập" required>
 						</div>
 						<h4>Mật khẩu*</h4>
 						<div class="input-group">
 							  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							  <input id="password" type="password" class="form-control" name="MatKhau" placeholder="Mật khẩu" required>
+							  <input id="MatKhau" type="password" class="form-control" name="MatKhau" placeholder="Mật khẩu" required>
 						</div>
 						<div class="DangNhap">
 							<br>
@@ -179,10 +181,10 @@
 	  		<div id="right">
 				<div class="list-group">
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">THỐNG KÊ</a>
-					<a href="#" class="list-group-item" style="text-align: center">THỐNG KÊ NHẬN LỚP<img src="image/new.gif"></a>
-					<a href="#" class="list-group-item" style="text-align: center">LỚP MỚI CHƯA GIAO<img src="image/hot.gif"></a>
+					<a href="ThongKeNhanLop.jsp" class="list-group-item" style="text-align: center">THỐNG KÊ NHẬN LỚP<img src="image/new.gif"></a>
+					<a href="LopMoiChuaGiao" class="list-group-item" style="text-align: center">LỚP MỚI CHƯA GIAO<img src="image/hot.gif"></a>
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">DOWNLOAD TÀI LIỆU</a>
-					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Toán</a>
+					<a href="DownloadTaiLieuMonToan.jsp" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Toán</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Lý</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Hóa</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Anh</a>
@@ -300,9 +302,9 @@
 	</div>
 </body>
 <script>
-      //khai báo biến slideIndex đại diện cho slide hiện tại
+      
       var slideIndex;
-      // KHai bào hàm hiển thị slide
+      
       function showSlides() {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -316,16 +318,16 @@
 
           slides[slideIndex].style.display = "block";  
           dots[slideIndex].className += " active";
-          //chuyển đến slide tiếp theo
+          
           slideIndex++;
-          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          
           if (slideIndex > slides.length - 1) {
             slideIndex = 0
           }    
-          //tự động chuyển đổi slide sau 8s
+          
           setTimeout(showSlides, 8000);
       }
-      //mặc định hiển thị slide đầu tiên 
+      
       showSlides(slideIndex = 0);
 
 
@@ -333,5 +335,5 @@
         showSlides(slideIndex = n);
       }
     </script>
-
 </html>
+

@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-  <title>TRANGCHU</title>
-  <meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/CSS.css">
-
+<title>GiaSuTieuBieu</title>
 </head>
 <body>
 	<div class="container">
@@ -34,8 +38,7 @@
 				</div>		
 			</div>
 		</div>
-		<div class="col-sm-1">
-			
+		<div class="col-sm-1">		
 		</div>
 	  </div>
 	  <div class="row">
@@ -44,13 +47,13 @@
 	  		<nav class="nav">
 			  <div id="menu">
 				<ul class="nav navbar-nav" style="background-color:#F7CD20;">
-				  <li class="hover"><a href="#">TRANG CHỦ</a></li>
-				  <li><a href="#">LỚP MỚI</a></li>
-				  <li><a href="#" >PHỤ HUYNH</a></li>
-				  <li><a href="#" >GIA SƯ</a></li>
-				  <li><a href="#" >TUYỂN DỤNG</a></li>
-				  <li><a href="#" >LIÊN HỆ</a></li>
-				  <li><a href="#" >ĐĂNG NHẬP</a></li>
+				  <li ><a href="TrangChu.jsp">TRANG CHỦ</a></li>
+				  <li><a href="LopMoiChuaGiao.jsp">LỚP MỚI</a></li>
+				  <li><a href="DangKyTimGiaSu.jsp" >PHỤ HUYNH</a></li>
+				  <li class="hover"><a href="DangKyLamGiaSu.jsp" >GIA SƯ</a></li>
+				  <li><a href="TuyenDung.jsp" >TUYỂN DỤNG</a></li>
+				  <li ><a href="LienHe.jsp" >LIÊN HỆ</a></li>
+				  <li><a href="DangNhap.jsp" >ĐĂNG NHẬP</a></li>
 				</ul>
 			  </div>
 			</nav>
@@ -81,7 +84,7 @@
 			</div> 
 
 			  
-		  	<div class="col-sm-4" style="margin-top: -20px;">  	
+		  	<div class="col-sm-4">  	
 		  			<a href="#"><img src="image/DKLGS.png"></a>				
 		  	</div>
 		  </div>
@@ -91,13 +94,13 @@
 	  		<div id="left">
 				<div class="list-group">
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">PHỤ HUYNH</a>
-					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí tìm gia sư</a>
+					<a href="DangKyTimGiaSu.jsp" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí tìm gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Phụ huynh cần biết</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Học phí gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Dịch vụ gia sư</a>
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">GIA SƯ</a>
 
-					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí làm gia sư</a>
+					<a href="DangKyLamGiaSu.jsp" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Đăng kí làm gia sư</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Quy trình nhận lớp</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Gia sư cần biết</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Mức phí gia sư</a>
@@ -105,7 +108,7 @@
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">GIA SƯ TIÊU BIỂU</a>
   				</div>
   				<div id="anhgstieubieu">
-						<a href="#"><img src="image/gs1.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: -10px"></a>
+						<a href="GiaSuTieuBieu.jsp"><img src="image/gs1.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: -10px"></a>
 						<a href="#"><img src="image/gs2.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5x;margin-top: -10px"></a>
 						<a href="#"><img src="image/gs3.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: 5px"></a>
 						<a href="#"><img src="image/gs4.jpg" style="width: 90px;height: 130px;float: left;margin-right: 5px;margin-top: 5px"></a>
@@ -132,138 +135,95 @@
 				</div>
 			</div>
 	  	</div>
-	  	<div class="col-lg-7" style="">
+	  	<div class="col-lg-7" >
 	  		<div class="panel panel-default">
 				<div class="panel-heading">
-					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">GIỚI THIỆU</p>
+					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">GIA SƯ TIÊU BIỂU</p>
 				</div>
+				<br>
 				<div class="panel-body">
-					  <img src="image/sli.jpg" style="width: 300px;float: left;margin-right: 15px;">
-							<b style="margin-left: 15px">Gia sư Trí Việt<br><br></b>
-							<h7 style="margin-left: 15px">Gia sư Trí Việt thành lập với sự trăn trở của những người là phụ huynh - học viên, đã rất gian nan trong việc tìm gia sư về dạy kèm tại nhà.<br></h7>
-							<h7 style="margin-left: 15px" >Nhằm đáp ứng gia sư cho các em học viên để có thành tích cao trong học tập và đạt kết quả cao nhất trong các kỳ thi quan trọng. Với đội ngũ......</h7><br><br>
-					  <button type="button" class="btn btn-danger" style="margin-left: 330px">Chi tiết</button>
-				</div>
-					<br>
-				<div class="panel-heading">
-					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">BẢNG GIÁ THAM KHẢO</p>
-				</div>
-				<div class="panel-body">
-						<img src="image/bangGia.PNG">
-				</div>
-					<br>
-				<div class="panel-heading">
-					<p style="margin-left: 50px;color: white;font-weight: bold;font-size: 16px;">LỚP DẠY KÈM MỚI</p>
-				</div>
-				<div class="panel-body">
-					<input class="form" style="float: left; width: 250px;height: 35px;margin-right: 10px;margin-left: 35px" placeholder="Nhập mã lớp hoặc từ khóa" type="text">
-					<div style="float: left; margin-right: 20px;" class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >---Tất cả tỉnh/thành---
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" >
-							  <li><a href="#">TP Hồ Chí Minh</a></li>
-							  <li><a href="#">Hà Nội</a></li>
-							  <li><a href="#">Lâm Đồng</a></li>
-							  <li><a href="#">Đồng Nai</a></li>
-						</ul>
+					<div class="col-lg-9"> 
+						<h4>THÔNG TIN CỦA GIA SƯ</h4>
+						<table>
+							<tr style="height:30px;">
+								<td><b>Mã gia sư:</b></td>
+								<td style="margin-left:10px;">100</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Họ và tên:</b></td>
+								<td style="margin-left:10px;">Đinh Thị Lệ Chi</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Ngày sinh:</b></td>
+								<td style="margin-left:10px;">12/2/1998</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Hiện là:</b></td>
+								<td style="margin-left:10px;">Cử nhân sư phạm</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Chuyên ngành:</b></td>
+								<td style="margin-left:10px;">Sư phạm ngữ văn</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Nhận dạy:</b></td>
+								<td style="margin-left:10px;">Lớp 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Dạy các môn:</b></td>
+								<td style="margin-left:10px;">Toán, Ngữ văn, Báo bài, Tiếng Việt, Luyện chữ đẹp</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Khu vực:</b></td>
+								<td style="margin-left:10px;">Quận 1, Quận 3, Quận 5, Q.Bình Thạnh</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Yêu cầu lương:</b></td>
+								<td style="margin-left:10px;">125.000 VNĐ</td>
+							</tr>
+							<tr style="height:30px;">
+								<td><b>Thông tin khác:</b></td>
+								<td style="margin-left:10px;">Có 2 năm kinh nghiệm đứng lớp và dạy kèm</td>
+							</tr>
+						</table>
 					</div>
-					<div>
-						 <button type="button" class="btn btn-danger">Tìm kiếm nhanh</button>
+					<div class="col-lg-3">
+						<img src="image/gs1.jpg" style="width:100%">
 					</div>
+					<br><br>
 				</div>
-				<div class="panel-body">
-						<div class="row">
-							<div class="col-sm-6">
-								<ul class="list-group">
-								  <li class="list-group-item active" >MÃ LỚP: 100</li>
-								  <li class="list-group-item">
-								    <h5><b>Lớp dạy:</b> Lớp 12</h5>
-								    <h5><b>Môn dạy:</b> Toán</h5>
-								    <h5><b>Địa chỉ:</b> Lý Chiêu Hoàng-Phường 10-Quận 6-TPHCM</h5>
-								    <h5><b>Mức lương:</b> 600.000 đ/tháng</h5>
-								    <h5><b>Số buổi:</b>1 buổi/tuần</h5>
-								    <h5><b>Thời gian:</b>Dạy 120 phút/buổi, từ 17h-19h</h5>
-								    <h5><b>Yêu cầu:</b>Nữ sinh viên kinh nghiệm</h5>
-								    <h5><b>Liên hệ:</b>0987.654.321- 0123.456.789</h5>
-								    <a href="#"><i class="fa fa-envelope-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-facebook-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-google-plus-square" style="font-size:36px;margin-right: 10px;float: left;"></i></a>
-								    <button type="button" class="btn btn-danger" style="margin-top: -10px;">ĐĂNG KÝ DẠY</button>
-								  </li>
-								</ul>
-							</div>
-							<div class="col-sm-6">
-								<ul class="list-group">
-								  <li class="list-group-item active" >MÃ LỚP: 100</li>
-								  <li class="list-group-item">
-								    <h5><b>Lớp dạy:</b> Lớp 12</h5>
-								    <h5><b>Môn dạy:</b> Toán</h5>
-								    <h5><b>Địa chỉ:</b> Lý Chiêu Hoàng-Phường 10-Quận 6-TPHCM</h5>
-								    <h5><b>Mức lương:</b> 600.000 đ/tháng</h5>
-								    <h5><b>Số buổi:</b>1 buổi/tuần</h5>
-								    <h5><b>Thời gian:</b>Dạy 120 phút/buổi, từ 17h-19h</h5>
-								    <h5><b>Yêu cầu:</b>Nữ sinh viên kinh nghiệm</h5>
-								    <h5><b>Liên hệ:</b>0987.654.321- 0123.456.789</h5>
-								    <a href="#"><i class="fa fa-envelope-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-facebook-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-google-plus-square" style="font-size:36px;margin-right: 10px;float: left;"></i></a>
-								    <button type="button" class="btn btn-danger" style="margin-top: -10px;">ĐĂNG KÝ DẠY</button>
-								  </li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6">
-								<ul class="list-group">
-								  <li class="list-group-item active" >MÃ LỚP: 100</li>
-								  <li class="list-group-item">
-								    <h5><b>Lớp dạy:</b> Lớp 12</h5>
-								    <h5><b>Môn dạy:</b> Toán</h5>
-								    <h5><b>Địa chỉ:</b> Lý Chiêu Hoàng-Phường 10-Quận 6-TPHCM</h5>
-								    <h5><b>Mức lương:</b> 600.000 đ/tháng</h5>
-								    <h5><b>Số buổi:</b>1 buổi/tuần</h5>
-								    <h5><b>Thời gian:</b>Dạy 120 phút/buổi, từ 17h-19h</h5>
-								    <h5><b>Yêu cầu:</b>Nữ sinh viên kinh nghiệm</h5>
-								    <h5><b>Liên hệ:</b>0987.654.321- 0123.456.789</h5>
-								    <a href="#"><i class="fa fa-envelope-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-facebook-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-google-plus-square" style="font-size:36px;margin-right: 10px;float: left;"></i></a>
-								    <button type="button" class="btn btn-danger" style="margin-top: -10px;">ĐĂNG KÝ DẠY</button>
-								  </li>
-								</ul>
-							</div>
-							<div class="col-sm-6">
-								<ul class="list-group">
-								  <li class="list-group-item active" >MÃ LỚP: 100</li>
-								  <li class="list-group-item">
-								    <h5><b>Lớp dạy:</b> Lớp 12</h5>
-								    <h5><b>Môn dạy:</b> Toán</h5>
-								    <h5><b>Địa chỉ:</b> Lý Chiêu Hoàng-Phường 10-Quận 6-TPHCM</h5>
-								    <h5><b>Mức lương:</b> 600.000 đ/tháng</h5>
-								    <h5><b>Số buổi:</b>1 buổi/tuần</h5>
-								    <h5><b>Thời gian:</b>Dạy 120 phút/buổi, từ 17h-19h</h5>
-								    <h5><b>Yêu cầu:</b>Nữ sinh viên kinh nghiệm</h5>
-								    <h5><b>Liên hệ:</b>0987.654.321- 0123.456.789</h5>
-								    <a href="#"><i class="fa fa-envelope-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-facebook-square" style="font-size:36px;margin-right: 10px;"></i></a>
-								    <a href="#"><i class="fa fa-google-plus-square" style="font-size:36px;margin-right: 10px;float: left;"></i></a>
-								    <button type="button" class="btn btn-danger" style="margin-top: -10px;">ĐĂNG KÝ DẠY</button>
-								  </li>
-								</ul>
-							</div>
-						</div>
-						<a href="#" style="margin-left: 500px;"><b>XEM THÊM</b></a>
-					</div>
+				<h3 style="text-align: center">DANH SÁCH CÁC LỚP ĐÃ ĐĂNG KÝ DẠY</h3>
+				<table border="1" width="100%">
+					<tr style="height:30px;">
+						<td style="text-align: center;"><b>Mã số</b></td>
+						<td style="text-align: center;"><b>Lớp</b></td>
+						<td style="text-align: center;"><b>Môn</b></td>
+						<td style="text-align: center;"><b>Thời gian</b></td>
+						<td style="text-align: center;"><b>Địa chỉ</b></td>
+					</tr>
+					<tr style="height:30px;">
+						<td><p style="margin-left:10px;">100</p></td>
+						<td><p style="margin-left:10px;">Lớp 4</p></td>
+						<td><p style="margin-left:10px;">Toán, Tiếng Việt</p></td>
+						<td><p style="margin-left:10px;">Thứ 2, 4, 6, từ 17h-19h</p></td>
+						<td><p style="margin-left:10px;">Quận Thủ Đức, TP HCM</p></td>
+					</tr>
+					<tr style="height:30px;">
+						<td><p style="margin-left:10px;">490</p></td>
+						<td><p style="margin-left:10px;">Lớp 7</p></td>
+						<td><p style="margin-left:10px;">Toán, Ngữ văn, Lịch sử</p></td>
+						<td><p style="margin-left:10px;">Thứ 5, 7, chủ nhật, từ 19h-21h</p></td>
+						<td><p style="margin-left:10px;">Quận 9, TP HCM</p></td>
+					</tr>
+				</table>
 			</div>
-	  		
 		 </div>
 	  	<div class="col-lg-2" style="width: 240px;">
 	  		<div id="right">
 				<div class="list-group">
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">THỐNG KÊ</a>
-					<a href="#" class="list-group-item" style="text-align: center">THỐNG KÊ NHẬN LỚP<img src="../image/new.gif"></a>
-					<a href="#" class="list-group-item" style="text-align: center">LỚP MỚI CHƯA GIAO<img src="../image/hot.gif"></a>
+					<a href="ThongKeNhanLop.jsp" class="list-group-item" style="text-align: center">THỐNG KÊ NHẬN LỚP<img src="image/new.gif"></a>
+					<a href="LopMoiChuaGiao.jsp" class="list-group-item" style="text-align: center">LỚP MỚI CHƯA GIAO<img src="image/hot.gif"></a>
 					<a href="#" class="list-group-item active" style="background-color: #FF8000; text-align: center;color: darkred;font-weight: bold">DOWNLOAD TÀI LIỆU</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Toán</a>
 					<a href="#" class="list-group-item"><span class="glyphicon glyphicon-triangle-right" style="color: #F28E11;"></span>Tài liệu môn Lý</a>
@@ -319,7 +279,6 @@
 					</a>
 
 					<br>
-					
 					
 					 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGia-S%25C6%25B0-Tr%25C3%25AD-Vi%25E1%25BB%2587t-613051568814323%2F&tabs=timeline&width=240&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="240" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 					
@@ -383,9 +342,9 @@
 	</div>
 </body>
 <script>
-      //khai báo biến slideIndex đại diện cho slide hiện tại
+      
       var slideIndex;
-      // KHai bào hàm hiển thị slide
+      
       function showSlides() {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -399,16 +358,16 @@
 
           slides[slideIndex].style.display = "block";  
           dots[slideIndex].className += " active";
-          //chuyển đến slide tiếp theo
+          
           slideIndex++;
-          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          
           if (slideIndex > slides.length - 1) {
             slideIndex = 0
           }    
-          //tự động chuyển đổi slide sau 8s
+          
           setTimeout(showSlides, 8000);
       }
-      //mặc định hiển thị slide đầu tiên 
+      
       showSlides(slideIndex = 0);
 
 
@@ -416,5 +375,4 @@
         showSlides(slideIndex = n);
       }
     </script>
-
 </html>

@@ -141,8 +141,42 @@ p.text
 {
 	height: 40px;
 	background-image: url(../image/Ca.png);
-	background-size: 700px 40px;
+	background-size:900px 40px;
 }
+input[type=text] {
+    width: 70%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+
+input[type=text]{
+	border-radius: 4px;
+}
+
+
+
+input[type=submit] {
+    background-color: orange;
+    color: white;
+    width: 100px;
+	height: 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.luuy{
+	font-weight: bold;
+}
+.table{
+    border: 1px solid #DDDD;
+}
+/*.table th, td{
+  text-align: center;
+}*/
 #footer
 {
 	height: auto;
@@ -164,3 +198,5 @@ background-image: url(../image/quan.jpg);
 	 color: darkred;
 	 font-weight: bold;
 }
+
+

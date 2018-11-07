@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -47,12 +46,12 @@
 			  <div id="menu">
 				<ul class="nav navbar-nav" style="background-color:#F7CD20;">
 				  <li class="hover"><a href="#">TRANG CHỦ</a></li>
-				  <li><a href="#">LỚP MỚI</a></li>
-				  <li><a href="#" >PHỤ HUYNH</a></li>
-				  <li><a href="#" >GIA SƯ</a></li>
-				  <li><a href="#" >TUYỂN DỤNG</a></li>
-				  <li><a href="#" >LIÊN HỆ</a></li>
-				  <li><a href="#" >ĐĂNG NHẬP</a></li>
+				  <li><a href="LopMoiChuaGiao.jsp">LỚP MỚI</a></li>
+				  <li><a href="DangKyTimTimGiaSu.jsp" >PHỤ HUYNH</a></li>
+				  <li><a href="DangKyLamSu.jsp" >GIA SƯ</a></li>
+				  <li><a href="TuyenDung.jsp" >TUYỂN DỤNG</a></li>
+				  <li><a href="LienHe.jsp" >LIÊN HỆ</a></li>
+				  <li><a href="DangNhap.jsp" >ĐĂNG NHẬP</a></li>
 				</ul>
 			  </div>
 			</nav>
@@ -193,3 +192,4 @@
       }
     </script>
 </html>
+>>>>>>> 94a11b0aa95e90198199b9f3668c897a6c0a0afe:WebContent/WebContent/QuenMatKhau.jsp
